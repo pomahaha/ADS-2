@@ -31,9 +31,9 @@ double a=0;
 }
 
 double sinn(double x, uint16_t count) { 
-    double ed=a; 
-    for (uint16_t b=2;b<=count;++b) { 
-        ed=ed+pown((-1),b-1)*calcItem(x,(2*b)-1); 
+    double ed=x; 
+    for (uint16_t b=2;b<=count;b++) { 
+        ed=ed+pown((-1.0),b-1)*calcItem(x,(2*b)-1); 
     } 
     return ed; 
 }
