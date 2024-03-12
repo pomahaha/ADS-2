@@ -33,7 +33,7 @@ double a = 0;
 double sinn(double x, uint16_t count) {
     double ed = x;
     for (uint16_t i=2; i <= count; i++) {
-        ed=ed+pown((-1.0), i-1) * calcItem(x, (2 * i)-1);
+        ed = ed+pown((-1.0), i-1) * calcItem(x, (2 * i)-1);
     }
     return ed;
 }
@@ -44,4 +44,4 @@ double cosn(double x, uint16_t count) {
         ed = ed+pown((-1.0), i-1) * calcItem(x, (i * 2)-2);
     }
     return ed;
-} 
+}
